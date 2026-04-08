@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingenia IA | Ingeniería de Procesos. Resultados Inteligentes.</title>
+  <meta name="description" content="Ecosistema de soluciones digitales con Inteligencia Artificial. Automatizamos y transformamos empresas con apps en producción y desarrollos a medida.">
+  
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/i18n.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/logo.jpg" alt="Ingenia IA" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover;">
+        <div class="logo-wordmark">
+          <span class="logo-name">INGENIA IA</span>
+        </div>
+      </a>
+      
+      <div class="nav-links">
+        <a href="#apps-produccion" class="nav-link" data-i18n="nav.apps">Apps</a>
+        <a href="#proximos" class="nav-link" data-i18n="nav.upcoming">Próximamente</a>
+        <a href="#casos" class="nav-link" data-i18n="nav.cases">Casos de Éxito</a>
+        <a href="#tu-app" class="nav-link" data-i18n="nav.custom">Tu App</a>
+      </div>
+
+      <div class="nav-right">
+        <div class="lang-toggle">
+          <button class="lang-btn active" data-lang="es" onclick="setLang('es')">ES</button>
+          <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+        </div>
+        <a href="#tu-app" class="btn btn-out" data-i18n="nav.cta">Solicitar Consultoría</a>
+        
+        <div class="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu">
+    <a href="#apps-produccion" class="mob-link" data-i18n="nav.apps">Apps</a>
+    <a href="#proximos" class="mob-link" data-i18n="nav.upcoming">Próximamente</a>
+    <a href="#casos" class="mob-link" data-i18n="nav.cases">Casos de Éxito</a>
+    <a href="#tu-app" class="mob-link" data-i18n="nav.custom">Tu App</a>
+    <a href="#tu-app" class="btn btn-pri mob-cta" data-i18n="nav.cta">Solicitar Consultoría</a>
+    <div class="lang-toggle mobile-lang" style="align-self:flex-start">
+      <button class="lang-btn active" data-lang="es" onclick="setLang('es')">ES</button>
+      <button class="lang-btn" data-lang="en" onclick="setLang('en')">EN</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header id="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-orb"></div>
+    
+    <div class="hero-content">
+      
+      <h1 class="hero-h1" data-i18n="hero.title">Las apps que<br><span class="text-gradient">transforman</span> tu negocio</h1>
+      <p class="hero-sub" data-i18n="hero.subtitle">Desarrollamos soluciones digitales escalables. Apps sectoriales en producción, personalizables o completamente a medida.</p>
+      
+      <div class="hero-ctas">
+        <a href="#apps-produccion" class="btn btn-pri btn-lg" data-i18n="hero.cta1">Ver nuestras Apps</a>
+        <a href="#tu-app" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Crea tu App a medida</a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-num" data-i18n="hero.stat1.num">3</div>
+          <div class="hstat-label" data-i18n="hero.stat1.label">Apps en Producción</div>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <div class="hstat-num" data-i18n="hero.stat2.num">2</div>
+          <div class="hstat-label" data-i18n="hero.stat2.label">En Desarrollo</div>
+        </div>
+        <div class="hstat-div"></div>
+        <div class="hstat">
+          <div class="hstat-num" data-i18n="hero.stat3.num">100%</div>
+          <div class="hstat-label" data-i18n="hero.stat3.label">Proyectos Entregados</div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="scroll-hint">
+      <span data-i18n="hero.scroll">Explorar</span>
+      <div class="scroll-mouse"></div>
+    </div>
+  </header>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="container">
+    <div class="section-header reveal">
+      <div class="section-badge" data-i18n="about.badge">Nuestra Propuesta</div>
+      <h2 class="section-title" data-i18n="about.title">¿Qué es Ingenia IA?</h2>
+      <p class="section-sub" data-i18n="about.subtitle">Combinamos Ingeniería de Procesos, Inteligencia Artificial y Lean Management para digitalizar tu negocio con soluciones que realmente funcionan.</p>
+    </div>
+    
+    <div class="value-grid reveal">
+      <div class="val-card">
+        <div class="val-icon">🧠</div>
+        <h3 class="val-title" data-i18n="about.v1.title">IA Integrada de Verdad</h3>
+        <p class="val-desc" data-i18n="about.v1.desc">No decorativa. IA que automatiza procesos críticos, elimina tareas manuales y genera resultados medibles desde el día uno.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">⚙️</div>
+        <h3 class="val-title" data-i18n="about.v2.title">Lean Management</h3>
+        <p class="val-desc" data-i18n="about.v2.desc">Optimizamos tus procesos antes de digitalizarlos. Eliminar ineficiencias primero, tecnología después.</p>
+      </div>
+      <div class="val-card">
+        <div class="val-icon">🔧</div>
+        <h3 class="val-title" data-i18n="about.v3.title">Apps Personalizables</h3>
+        <p class="val-desc" data-i18n="about.v3.desc">Adapta cualquier app de nuestro ecosistema a tu sector, o construye la tuya desde cero con nuestro equipo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPS EN PRODUCCIÓN -->
+  <section id="apps-produccion" class="container">
+    <div class="section-header reveal">
+      <div class="section-badge" data-i18n="apps.badge">Live · En Producción</div>
+      <h2 class="section-title" data-i18n="apps.title">Nuestro ecosistema de soluciones</h2>
+      <p class="section-sub" data-i18n="apps.subtitle">Tres aplicaciones reales, en producción activa, con clientes reales. Todas personalizables para tu empresa.</p>
+    </div>
+    
+    <div class="app-grid reveal">
+      
+      <!-- VecinOS -->
+      <div class="app-card ac-com">
+        <div class="app-cat" data-i18n="app1.cat">Comunidades</div>
+        <div class="app-icon">🏘️</div>
+        <h3 class="app-name" data-i18n="app1.name">VecinOS</h3>
+        <div class="app-tagline" data-i18n="app1.tagline">Adiós a los grupos de WhatsApp. Hola, comunidad inteligente.</div>
+        <p class="app-desc" data-i18n="app1.desc">Plataforma integral para gestionar comunidades de vecinos. Tablón de anuncios, votaciones, cuentas, incidencias, reservas y documentación — todo desde el móvil.</p>
+        <div class="app-feats">
+          <span class="app-feat" data-i18n="app1.f1">Tablón Digital</span>
+          <span class="app-feat" data-i18n="app1.f2">Votaciones Online</span>
+          <span class="app-feat" data-i18n="app1.f3">Gestión Financiera</span>
+          <span class="app-feat" data-i18n="app1.f4">Reservas</span>
+        </div>
+        <div class="app-foot">
+          <a href="#tu-app" class="btn btn-out" style="padding: 6px 14px; font-size: 0.85rem; border-color: rgba(0,194,255,0.4); color: var(--cyan);">Solicitar DEMO</a>
+          <a href="app-vecinos.html" class="app-link">
+            <span data-i18n="apps.cta">Ver detalles</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- The Heels -->
+      <div class="app-card ac-fit">
+        <div class="app-cat" data-i18n="app2.cat">Salud & Fitness</div>
+        <div class="app-icon">✨</div>
+        <h3 class="app-name" data-i18n="app2.name">The Heels Academy</h3>
+        <div class="app-tagline" data-i18n="app2.tagline">La academia de posing online, de la sesión al seguimiento completo.</div>
+        <p class="app-desc" data-i18n="app2.desc">App completa para academia de posing de competición. Gestión de sesiones, planes personalizados, feedback multimedia, blog profesional y pagos integrados.</p>
+        <div class="app-feats">
+          <span class="app-feat" data-i18n="app2.f1">Reserva de Sesiones</span>
+          <span class="app-feat" data-i18n="app2.f2">Planes Personalizados</span>
+          <span class="app-feat" data-i18n="app2.f3">Feedback Multimedia</span>
+          <span class="app-feat" data-i18n="app2.f4">Blog Automatizado</span>
+        </div>
+        <div class="app-foot">
+          <a href="#tu-app" class="btn btn-out" style="padding: 6px 14px; font-size: 0.85rem; border-color: rgba(196,77,255,0.4); color: var(--purple);">Solicitar DEMO</a>
+          <a href="app-theheels.html" class="app-link">
+            <span data-i18n="apps.cta">Ver detalles</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Muelles App -->
+      <div class="app-card ac-log">
+        <div class="app-cat" data-i18n="app3.cat">Logística</div>
+        <div class="app-icon">🚚</div>
+        <h3 class="app-name" data-i18n="app3.name">Muelles App</h3>
+        <div class="app-tagline" data-i18n="app3.tagline">De los gritos en la campa a la logística 100% digitalizada.</div>
+        <p class="app-desc" data-i18n="app3.desc">Sistema digital de gestión de accesos a muelles de carga. Registro por QR desde la cabina, sala de espera virtual y asignación de muelle en tiempo real. Coste cero en licencias.</p>
+        <div class="app-feats">
+          <span class="app-feat" data-i18n="app3.f1">Registro QR · Sin App</span>
+          <span class="app-feat" data-i18n="app3.f2">Espera Virtual Móvil</span>
+          <span class="app-feat" data-i18n="app3.f3">Asignación Click-to-Assign</span>
+          <span class="app-feat" data-i18n="app3.f5">"El Vigilante" · Alertas</span>
+        </div>
+        <div class="app-foot">
+          <a href="#tu-app" class="btn btn-out" style="padding: 6px 14px; font-size: 0.85rem; border-color: rgba(0,229,204,0.4); color: var(--teal);">Solicitar DEMO</a>
+          <a href="app-muelles.html" class="app-link">
+            <span data-i18n="apps.cta">Ver detalles</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRÓXIMOS LANZAMIENTOS -->
+  <section id="proximos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" style="color:var(--amber);background:rgba(255,170,0,0.1);border-color:rgba(255,170,0,0.25)" data-i18n="upcoming.badge">En Desarrollo</div>
+        <h2 class="section-title" data-i18n="upcoming.title">En el horno</h2>
+        <p class="section-sub" data-i18n="upcoming.subtitle">Dos nuevas soluciones en desarrollo activo. Sé de los primeros en acceder.</p>
+      </div>
+
+      <div class="cs-grid reveal">
+        <!-- App Fitness -->
+        <div class="cs-card">
+          <div class="cs-soon" data-i18n="upcoming.soon">Próximamente</div>
+          <div class="cs-icon">🏋️‍♀️</div>
+          <div class="cs-cat" data-i18n="cs1.cat">Fitness & Bienestar</div>
+          <h3 class="cs-name" data-i18n="cs1.name">App Fitness</h3>
+          <p class="cs-desc" data-i18n="cs1.desc">Para centros de fitness, entrenadores personales y atletas. Seguimiento de entrenamientos, progreso físico, rutinas adaptativas y nutrición personalizada.</p>
+          <div class="cs-bar-wrap">
+            <div class="cs-bar"><div class="cs-fill" style="width:75%;background:var(--g-pur)"></div></div>
+            <span data-i18n="upcoming.dev">En desarrollo</span> (75%)
+          </div>
+        </div>
+        
+        <!-- App Facturación -->
+        <div class="cs-card">
+          <div class="cs-soon" data-i18n="upcoming.soon">Próximamente</div>
+          <div class="cs-icon">📄</div>
+          <div class="cs-cat" data-i18n="cs2.cat">Gestión Empresarial</div>
+          <h3 class="cs-name" data-i18n="cs2.name">App Facturación</h3>
+          <p class="cs-desc" data-i18n="cs2.desc">Solución de facturación inteligente para autónomos y pymes. Emisión de facturas, seguimiento de cobros, informes fiscales y categorización automática inteligente.</p>
+          <div class="cs-bar-wrap">
+            <div class="cs-bar"><div class="cs-fill" style="width:40%;background:var(--g-pri)"></div></div>
+            <span data-i18n="upcoming.dev">En desarrollo</span> (40%)
+          </div>
+        </div>
+      </div>
+
+      <div class="waitlist-box reveal">
+        <h3 class="wl-title" data-i18n="waitlist.title">¿Quieres ser de los primeros en acceder?</h3>
+        <p class="wl-sub" data-i18n="waitlist.subtitle">Únete a la lista de espera y te avisamos en el lanzamiento.</p>
+        <form id="waitlist-form" class="wl-form">
+          <select required>
+            <option value="" disabled selected data-i18n="waitlist.select">Selecciona la app</option>
+            <option value="fitness" data-i18n="waitlist.opt1">App Fitness</option>
+            <option value="billing" data-i18n="waitlist.opt2">App Facturación</option>
+            <option value="both" data-i18n="waitlist.opt3">Ambas</option>
+          </select>
+          <input type="email" required placeholder="tu@email.com" data-i18n-ph="waitlist.placeholder">
+          <button type="submit" class="btn btn-pri" data-i18n="waitlist.btn">Unirme a la lista</button>
+        </form>
+        <div id="waitlist-success" class="wl-success">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          <span data-i18n="waitlist.success">¡Ya estás en la lista! Te avisaremos en el lanzamiento.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS DE ÉXITO -->
+  <section id="casos" class="container">
+    <div class="section-header reveal">
+      <div class="section-badge" style="color:var(--purple);background:rgba(196,77,255,0.1);border-color:rgba(196,77,255,0.25)" data-i18n="cases.badge">Resultados Reales</div>
+      <h2 class="section-title" data-i18n="cases.title">Empresas que ya lo están viviendo</h2>
+      <p class="section-sub" data-i18n="cases.subtitle">Nuestras apps en producción son nuestros mejores casos de éxito.</p>
+    </div>
+
+    <div class="cases-stack reveal">
+      
+      <!-- Caso 1: The Heels -->
+      <div class="case-card">
+        <div>
+          <div class="case-ind" data-i18n="case1.industry">Academia · Posing</div>
+          <h3 class="case-name" data-i18n="case1.name">The Heels Academy</h3>
+          <div class="case-headline" data-i18n="case1.headline">"De agenda de papel a plataforma digital completa"</div>
+          <div class="case-ch-label" data-i18n="cases.challenge">El reto</div>
+          <p class="case-ch" data-i18n="case1.challenge">Gestión manual de sesiones, pagos y seguimiento de atletas vía WhatsApp y email.</p>
+        </div>
+        <div>
+          <div class="case-ch-label" data-i18n="cases.solution">La solución</div>
+          <p class="case-ch" data-i18n="case1.solution">App web full-stack con reservas, planes, feedback multimedia y blog automatizado.</p>
+        </div>
+        <div class="case-metrics">
+          <div class="case-ch-label" data-i18n="cases.result">Resultado</div>
+          <div class="case-m" data-i18n="case1.m1">100% de reservas online</div>
+          <div class="case-m" data-i18n="case1.m2">Cero llamadas de gestión</div>
+          <div class="case-m" data-i18n="case1.m3">Blog automatizado con IA</div>
+          <div class="case-m" data-i18n="case1.m4">Panel admin completo</div>
+          <a href="https://posingtheheels.com" target="_blank" class="app-link" style="margin-top: 1rem;">
+            Ver la plataforma real
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#tu-app" class="btn btn-out" style="margin-top: 0.5rem; text-align: center;">Solicitar DEMO</a>
+        </div>
+      </div>
+
+      <!-- Caso 2: VecinOS -->
+      <div class="case-card">
+        <div>
+          <div class="case-ind" data-i18n="case2.industry">Comunidades · Vecinos</div>
+          <h3 class="case-name" data-i18n="case2.name">VecinOS</h3>
+          <div class="case-headline" data-i18n="case2.headline">"Adiós a los grupos de WhatsApp"</div>
+          <div class="case-ch-label" data-i18n="cases.challenge">El reto</div>
+          <p class="case-ch" data-i18n="case2.challenge">Comunicación caótica por WhatsApp, gestión contable manual y falta de transparencia entre vecinos.</p>
+        </div>
+        <div>
+          <div class="case-ch-label" data-i18n="cases.solution">La solución</div>
+          <p class="case-ch" data-i18n="case2.solution">Plataforma centralizada con comunicación, finanzas, votaciones y reserva de instalaciones.</p>
+        </div>
+        <div class="case-metrics">
+          <div class="case-ch-label" data-i18n="cases.result">Resultado</div>
+          <div class="case-m" data-i18n="case2.m1">Gestión de incidencias 3x más rápida</div>
+          <div class="case-m" data-i18n="case2.m2">Transparencia financiera total</div>
+          <div class="case-m" data-i18n="case2.m3">Accesible 24/7 desde cualquier dispositivo</div>
+          <div class="case-m" data-i18n="case2.m4">Prueba gratuita 30 días</div>
+          <a href="https://www.appvecinos.es/demo" target="_blank" class="app-link" style="margin-top: 1rem;">
+            Ver la Demo online
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          <a href="#tu-app" class="btn btn-out" style="margin-top: 0.5rem; text-align: center;">Solicitar DEMO</a>
+        </div>
+      </div>
+
+      <!-- Caso 3: Muelles App -->
+      <div class="case-card">
+        <div>
+          <div class="case-ind" data-i18n="case3.industry">Logística · Gran Distribución</div>
+          <h3 class="case-name" data-i18n="case3.name">Muelles App · Alcampo</h3>
+          <div class="case-headline" data-i18n="case3.headline">"De gritos en la campa a logística 100% digitalizada"</div>
+          <div class="case-ch-label" data-i18n="cases.challenge">El reto</div>
+          <p class="case-ch" data-i18n="case3.challenge">Llamadas constantes, camiones desorientados bloqueando accesos y registros manuales en papel sin trazabilidad.</p>
+        </div>
+        <div>
+          <div class="case-ch-label" data-i18n="cases.solution">La solución</div>
+          <p class="case-ch" data-i18n="case3.solution">PWA sin instalación: QR + matrícula + sala de espera virtual + asignación de muelle con alerta sonora.</p>
+          <div class="client-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            Grupo Auchan
+          </div>
+        </div>
+        <div class="case-metrics">
+          <div class="case-ch-label" data-i18n="cases.result">Resultado</div>
+          <div class="case-m" data-i18n="case3.m1">100% del proceso digitalizado</div>
+          <div class="case-m" data-i18n="case3.m2">0€ coste en licencias externas</div>
+          <div class="case-m" data-i18n="case3.m3">Disponible 24/7 · RGPD integrado</div>
+          <div class="case-m" data-i18n="case3.m4">Rotación de camiones optimizada</div>
+          <a href="#tu-app" class="btn btn-out" style="margin-top: 1.5rem; text-align: center;">Solicitar DEMO</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TU APP (Consultoría) -->
+  <section id="tu-app">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-badge" data-i18n="custom.badge">Para Ti</div>
+        <h2 class="section-title" data-i18n="custom.title">Tu negocio merece su propia app</h2>
+        <p class="section-sub" data-i18n="custom.subtitle">¿Tienes un proceso que quieres digitalizar? Cuéntanos y lo hacemos realidad — personalizando una de nuestras apps o construyendo la tuya desde cero.</p>
+      </div>
+
+      <div class="paths-grid reveal">
+        <div class="path-card active">
+          <div class="path-icon">🧩</div>
+          <div>
+            <h3 class="path-title" data-i18n="custom.path1.title">Personaliza una app existente</h3>
+            <p class="path-desc" data-i18n="custom.path1.desc">Adapta VecinOS, Muelles App u otra solución del ecosistema a tu sector o necesidades específicas.</p>
+          </div>
+        </div>
+        <div class="path-card">
+          <div class="path-icon">✨</div>
+          <div>
+            <h3 class="path-title" data-i18n="custom.path2.title">App 100% a medida</h3>
+            <p class="path-desc" data-i18n="custom.path2.desc">Construimos desde cero tu aplicación escalables, diseñada para tus procesos únicos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-wrap reveal">
+        <!-- Hidden input connected to JS cards to retain state -->
+        <input type="radio" name="project_type_hs" id="proj-custom" value="custom" checked style="display:none">
+        <input type="radio" name="project_type_hs" id="proj-scratch" value="scratch" style="display:none">
+
+        <form id="consulting-form">
+          <div class="form-grid">
+            <div class="field">
+              <label data-i18n="form.name">Nombre completo *</label>
+              <input type="text" name="name" required>
+            </div>
+            <div class="field">
+              <label data-i18n="form.company">Empresa / Organización</label>
+              <input type="text" name="company">
+            </div>
+            <div class="field">
+              <label data-i18n="form.email">Email de contacto *</label>
+              <input type="email" name="email" required>
+            </div>
+            <div class="field">
+              <label data-i18n="form.phone">Teléfono (opcional)</label>
+              <input type="tel" name="phone">
+            </div>
+            
+            <div class="field" style="margin-top:1rem">
+              <label data-i18n="form.project.label">¿Qué tipo de proyecto tienes? *</label>
+              <select name="project_type" required>
+                <option value="personalizar" data-i18n="form.project.opt1">Personalizar una app existente</option>
+                <option value="nueva" data-i18n="form.project.opt2">Desarrollar una app nueva desde cero</option>
+                <option value="asesoria" data-i18n="form.project.opt3">No estoy seguro/a, necesito asesoramiento</option>
+              </select>
+            </div>
+            
+            <div class="field" id="which-wrap" style="margin-top:1rem; display:block">
+              <label data-i18n="form.which.label">¿Cuál app te interesa?</label>
+              <select name="which_app">
+                <option value="vecinos" data-i18n="form.which.opt1">VecinOS (Comunidades)</option>
+                <option value="heels" data-i18n="form.which.opt2">The Heels (Academia)</option>
+                <option value="muelles" data-i18n="form.which.opt3">Muelles App (Logística)</option>
+                <option value="fitness" data-i18n="form.which.opt4">App Fitness (Próximamente)</option>
+                <option value="facturacion" data-i18n="form.which.opt5">App Facturación (Próximamente)</option>
+                <option value="otra" data-i18n="form.which.opt6">Otra</option>
+              </select>
+            </div>
+
+            <div class="field" style="margin-top:1rem">
+              <label data-i18n="form.sector.label">Sector de tu empresa *</label>
+              <select name="sector" required>
+                <option value="hosteleria" data-i18n="form.sector.opt1">Hostelería y Restauración</option>
+                <option value="salud" data-i18n="form.sector.opt2">Salud y Bienestar</option>
+                <option value="logistica" data-i18n="form.sector.opt3">Logística y Distribución</option>
+                <option value="comunidades" data-i18n="form.sector.opt4">Comunidades e Inmobiliaria</option>
+                <option value="educacion" data-i18n="form.sector.opt5">Educación y Formación</option>
+                <option value="retail" data-i18n="form.sector.opt6">Retail y Comercio</option>
+                <option value="industria" data-i18n="form.sector.opt7">Industria y Manufactura</option>
+                <option value="servicios" data-i18n="form.sector.opt8">Servicios Profesionales</option>
+                <option value="otro" data-i18n="form.sector.opt9">Otro</option>
+              </select>
+            </div>
+
+            <div class="field" style="margin-top:1rem">
+              <label data-i18n="form.budget.label">Presupuesto aproximado</label>
+              <select name="budget">
+                <option value="1" data-i18n="form.budget.opt1">Menos de 3.000€</option>
+                <option value="2" data-i18n="form.budget.opt2">3.000€ – 8.000€</option>
+                <option value="3" data-i18n="form.budget.opt3">8.000€ – 20.000€</option>
+                <option value="4" data-i18n="form.budget.opt4">Más de 20.000€</option>
+                <option value="5" data-i18n="form.budget.opt5">No lo tengo claro todavía</option>
+              </select>
+            </div>
+
+            <div class="field form-full" style="margin-top:1rem">
+              <label data-i18n="form.process">¿Qué proceso quieres digitalizar? *</label>
+              <textarea name="process" required></textarea>
+            </div>
+
+            <div class="field form-full" style="margin-top:1rem">
+              <label data-i18n="form.ai.label">¿Te interesa incorporar Inteligencia Artificial?</label>
+              <div class="radio-group">
+                <label class="radio-opt selected">
+                  <input type="radio" name="ai_interest" value="yes" checked> <span data-i18n="form.ai.yes">Sí, definitivamente</span>
+                </label>
+                <label class="radio-opt">
+                  <input type="radio" name="ai_interest" value="maybe"> <span data-i18n="form.ai.maybe">Quizás, quiero saber más</span>
+                </label>
+                <label class="radio-opt">
+                  <input type="radio" name="ai_interest" value="no"> <span data-i18n="form.ai.no">No por ahora</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field form-full" style="margin-top:1rem">
+              <label data-i18n="form.source.label">¿Cómo nos conociste?</label>
+              <select name="source">
+                <option value="recomendacion" data-i18n="form.source.opt1">Recomendación</option>
+                <option value="linkedin" data-i18n="form.source.opt2">LinkedIn</option>
+                <option value="google" data-i18n="form.source.opt3">Google</option>
+                <option value="evento" data-i18n="form.source.opt4">Evento</option>
+                <option value="otro" data-i18n="form.source.opt5">Otro</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-submit">
+            <button type="submit" class="btn btn-pri btn-lg" data-i18n="form.submit">Enviar solicitud de consultoría</button>
+            <div class="form-privacy" data-i18n="form.privacy">Tus datos son tratados conforme al RGPD. Solo los usamos para contactarte.</div>
+          </div>
+        </form>
+
+        <div id="form-success-msg" class="form-success">
+          <div class="form-success-icon">✨</div>
+          <h3 class="form-success-title" data-i18n="form.success.title">¡Solicitud recibida!</h3>
+          <p class="form-success-msg" data-i18n="form.success.msg">Te contactaremos en menos de 24h laborables para agendar una videollamada de diagnóstico gratuita.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.jpg" alt="Ingenia IA" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover; margin-bottom: 0.75rem;">
+          <div class="footer-brand-name">INGENIA IA</div>
+          <div class="footer-tagline" data-i18n="footer.tagline">Ingeniería de Procesos. Resultados Inteligentes.</div>
+          <p class="footer-desc" data-i18n="footer.desc">Transformamos procesos manuales en sistemas autónomos. Descubre nuestro ecosistema de apps.</p>
+        </div>
+        
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col1">Apps</div>
+          <div class="footer-links">
+            <a href="app-vecinos.html" class="footer-link" data-i18n="footer.link.vecinos">VecinOS</a>
+            <a href="app-theheels.html" class="footer-link" data-i18n="footer.link.heels">The Heels Academy</a>
+            <a href="app-muelles.html" class="footer-link" data-i18n="footer.link.muelles">Muelles App</a>
+            <a href="#" class="footer-link" style="color:var(--amber)" data-i18n="footer.link.fitness">App Fitness (Soon)</a>
+            <a href="#" class="footer-link" style="color:var(--amber)" data-i18n="footer.link.facturacion">App Facturación (Soon)</a>
+          </div>
+        </div>
+        
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col2">Empresa</div>
+          <div class="footer-links">
+            <a href="#nosotros" class="footer-link" data-i18n="footer.link.about">Sobre nosotros</a>
+            <a href="#casos" class="footer-link" data-i18n="footer.link.cases">Casos de éxito</a>
+            <a href="#tu-app" class="footer-link" data-i18n="footer.link.custom">Tu App a medida</a>
+            <a href="#tu-app" class="footer-link" data-i18n="footer.link.contact">Contacto</a>
+          </div>
+        </div>
+        
+        <div>
+          <div class="footer-col-title" data-i18n="footer.col3">Legal</div>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-i18n="footer.link.privacy">Política de Privacidad</a>
+            <a href="#" class="footer-link" data-i18n="footer.link.terms">Aviso Legal</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copy" data-i18n="footer.rights">© 2025 Ingenia IA. Todos los derechos reservados.</div>
+        <div class="footer-made" data-i18n="footer.made">Hecho con ❤️ e IA en España</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

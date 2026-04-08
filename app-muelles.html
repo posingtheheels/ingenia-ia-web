@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muelles App | Ingenia IA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/i18n.js"></script>
+  <style>
+    .app-hero { padding: 120px 20px 60px; text-align: center; background: linear-gradient(to bottom, rgba(13,27,42,1), rgba(10,40,35,0.8)); }
+    .app-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--teal); font-family: var(--fh); }
+    .app-hero p { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
+    .app-content { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .feat-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; margin-bottom: 60px; }
+    .f-card { background: var(--glass); padding: 25px; border-radius: 16px; border: 1px solid rgba(0,229,204,0.15); }
+    .f-card h4 { color: var(--text); font-size: 1.1rem; margin-bottom: 10px; }
+    .f-card p { color: var(--muted); font-size: 0.9rem; }
+    .app-cta-box { text-align: center; padding: 60px 20px; background: rgba(0,229,204,0.05); border-radius: 20px; border: 1px solid rgba(0,229,204,0.2); margin-bottom: 80px; }
+    .btn-teal { background: var(--g-acc); color: #000; font-weight: 700; box-shadow: 0 4px 20px rgba(0,229,204,0.3); }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.jpg" alt="Ingenia IA" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover;">
+        <div class="logo-wordmark"><span class="logo-name">INGENIA IA</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#apps-produccion" class="nav-link">← Volver al Ecosistema</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app-hero">
+    <div class="section-badge" style="color:var(--teal); border-color:rgba(0,229,204,0.3)">Real-time Logistics</div>
+    <h1>Muelles App</h1>
+    <p>De los gritos a los conductores en la campa a una operación logística 100% digitalizada, estructurada y en tiempo real con 0€ de costes de licencia de software.</p>
+  </div>
+
+  <div class="app-content">
+    <h2 class="section-title" style="text-align:center; font-size:2rem; margin-bottom: 2rem;">Control Logístico Moderno</h2>
+    <p style="color:var(--text); font-size:1.1rem; line-height:1.8; margin-bottom: 2rem;">
+      <strong>El Reto Logístico (Ej. Alcampo):</strong> En grandes superficies o centros logísticos, la llegada de camiones resulta caótica. Llamadas continuas, falta de trazabilidad, conductores perdidos bloqueando vías de servicio, y tiempos ineficientes.<br><br>
+      <strong>Nuestra Solución Lean:</strong> Desarrollamos una PWA (Aplicación Web Progresiva). El operario no instala nada, al llegar simplemente escanea un QR en la entrada desde la cabina y espera. La central recibe la notificación por un panel, le asigna el muelle, y el camión recibe una alerta visual verde y sónica. Limpio, anónimo y completamente fluido.
+    </p>
+
+    <h2 class="section-title" style="text-align:center; font-size:2rem; margin-top:4rem;">Features Principales</h2>
+    <div class="feat-list">
+      <div class="f-card">
+        <h4>📱 Escaneo QR (Zero Install)</h4>
+        <p>Acceso instantáneo para transportistas sin necesidad de descargar apps, asegurando la adopción al 100%.</p>
+      </div>
+      <div class="f-card">
+        <h4>🔊 Sala Virtual Activa</h4>
+        <p>El móvil actúa como busca personal del camionero; pantalla verde y alarma acústica cuando el muelle está libre.</p>
+      </div>
+      <div class="f-card">
+        <h4>💻 Dashboard de Control Panel</h4>
+        <p>Vista satélite en tiempo real para el equipo de almacén con asignación rápida "Click-to-Assign" y sistema centralizado.</p>
+      </div>
+      <div class="f-card">
+        <h4>🚨 'El Vigilante'</h4>
+        <p>Módulo de alarma persistente en PC de central que evita que ninguna llegada quede ignorada o en el limbo.</p>
+      </div>
+      <div class="f-card">
+        <h4>🛡️ Anónimo y RGPD Compliant</h4>
+        <p>El camionero no comparte su número de teléfono ni datos personales, todo opera por el identificador de matrícula y servicio.</p>
+      </div>
+      <div class="f-card">
+        <h4>📈 Trazabilidad Datos Reales</h4>
+        <p>Adiós al papel. Datos estructurados permanentemente para poder aplicar Inteligencia Artificial e identificar cuellos de botella mediante Lean Management.</p>
+      </div>
+    </div>
+
+    <div class="app-cta-box">
+      <h3 style="font-size:2rem; margin-bottom:1rem; font-family:var(--fh);">¿Tienes operaciones físicas complejas?</h3>
+      <p style="color:var(--muted); margin-bottom:2rem; max-width:500px; margin-left:auto; margin-right:auto;">Si los procesos logísticos en tu almacén o cadena de distribución pueden mejorar, digitalizamos tu flujo sin coste estructural usando tecnología open-source.</p>
+      <a href="index.html#tu-app" class="btn btn-teal btn-lg">Industrializar Procesos</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" style="text-align:center; padding: 20px; border-top: 1px solid var(--border); color: var(--muted2); font-size: 0.8rem;">
+      © 2025 Ingenia IA. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

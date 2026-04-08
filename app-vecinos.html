@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Comunidades | Ingenia IA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/i18n.js"></script>
+  <style>
+    .app-hero { padding: 120px 20px 60px; text-align: center; background: linear-gradient(to bottom, rgba(13,27,42,1), rgba(10,37,64,0.8)); }
+    .app-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--cyan); font-family: var(--fh); }
+    .app-hero p { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
+    .app-content { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .feat-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; margin-bottom: 60px; }
+    .f-card { background: var(--glass); padding: 25px; border-radius: 16px; border: 1px solid var(--border); }
+    .f-card h4 { color: var(--text); font-size: 1.1rem; margin-bottom: 10px; }
+    .f-card p { color: var(--muted); font-size: 0.9rem; }
+    .app-cta-box { text-align: center; padding: 60px 20px; background: rgba(0,194,255,0.05); border-radius: 20px; border: 1px solid var(--border); margin-bottom: 80px; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.jpg" alt="Ingenia IA" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover;">
+        <div class="logo-wordmark"><span class="logo-name">INGENIA IA</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#apps-produccion" class="nav-link">← Volver al Ecosistema</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app-hero">
+    <div class="section-badge" style="color:var(--cyan); border-color:rgba(0,194,255,0.3)">Gestión de Comunidades</div>
+    <h1>Plataforma de Comunidades <br> <span style="font-size: 0.5em; opacity: 0.8">(Caso: VecinOS)</span></h1>
+    <p>Adiós a los grupos de WhatsApp caóticos. Centraliza la comunicación, votaciones y reservas de asociaciones, clubes deportivos, coworkings o zonas residenciales.</p>
+    <div style="display:flex; justify-content:center; gap:15px; margin-top:20px;">
+      <a href="https://www.appvecinos.es/demo" target="_blank" class="btn btn-pri">Ver Caso (VecinOS)</a>
+      <a href="index.html#tu-app" class="btn btn-out">Personalizar para mi red</a>
+    </div>
+  </div>
+
+  <div class="app-content">
+    <h2 class="section-title" style="text-align:center; font-size:2rem; margin-bottom: 2rem;">Digitalización de Colectivos y Asociaciones</h2>
+    <p style="color:var(--text); font-size:1.1rem; line-height:1.8; margin-bottom: 2rem;">
+      <strong>El Problema:</strong> La gestión de grandes grupos (clubes, asociaciones profesionales, coworkings o comunidades) suele depender de grupos de WhatsApp, cuotas cobradas por docenas de métodos distintos e información que se pierde. Esto causa falta de transparencia y frustración tanto a usuarios como a gestores.<br><br>
+      <strong>La Solución:</strong> Tomando VecinOS como principal caso de éxito, hemos diseñado una arquitectura genérica de comunidades. Este portal reúne en un solo punto la comunicación estructurada mediante tablones, las votaciones privadas, la reserva de instalaciones o servicios compartidos y el estado contable en tiempo real.
+    </p>
+
+    <h2 class="section-title" style="text-align:center; font-size:2rem; margin-top:4rem;">Features Principales Disponibles</h2>
+    <div class="feat-list">
+      <div class="f-card">
+        <h4>📢 Tablón Oficial</h4>
+        <p>Avisos con confirmación de lectura, listado de eventos y envío de información oficial sin respuestas tipo spam ni hilos infinitos.</p>
+      </div>
+      <div class="f-card">
+        <h4>💶 Finanzas Transparentes</h4>
+        <p>Balance en tiempo real de los fondos compartidos. Emisión de recibos y cobro de cuotas automatizado y documentado.</p>
+      </div>
+      <div class="f-card">
+        <h4>🗳️ Votaciones Digitales</h4>
+        <p>Toma el pulso al grupo con encuestas de validación seguras, con resultados automáticos y blindades frente a manipulación.</p>
+      </div>
+      <div class="f-card">
+        <h4>📅 Reservas de Espacios</h4>
+        <p>Salas de reuniones, pistas deportivas o equipos gestionados por franjas, previniendo el caos o los solapamientos.</p>
+      </div>
+      <div class="f-card">
+        <h4>🛠️ Reporte de Incidencias</h4>
+        <p>Canal formalizado para el contacto entre los miembros y la junta / administración, gestionando tickets con fotos e historiales.</p>
+      </div>
+      <div class="f-card">
+        <h4>📂 Panel del Administrador</h4>
+        <p>Panel de superusuario capaz de emitir bloqueos, manejar proveedores externos y controlar cada rincón de los permisos de los miembros.</p>
+      </div>
+    </div>
+
+    <div class="app-cta-box">
+      <h3 style="font-size:2rem; margin-bottom:1rem; font-family:var(--fh);">¿Gestionas un colectivo o asociación?</h3>
+      <p style="color:var(--muted); margin-bottom:2rem; max-width:500px; margin-left:auto; margin-right:auto;">Nuestro sistema base de comunidades permite ser reimaginado por completo adaptándose a las reglas y vocabulario de un club deportivo, colegio profesional u ONG, incorporando tu propia identidad corporativa.</p>
+      <a href="index.html#tu-app" class="btn btn-pri btn-lg">Quiero digitalizar mi comunidad</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" style="text-align:center; padding: 20px; border-top: 1px solid var(--border); color: var(--muted2); font-size: 0.8rem;">
+      © 2025 Ingenia IA. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Heels Academy / Booking Engine | Ingenia IA</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/i18n.js"></script>
+  <style>
+    .app-hero { padding: 120px 20px 60px; text-align: center; background: linear-gradient(to bottom, rgba(13,27,42,1), rgba(15,10,35,0.8)); }
+    .app-hero h1 { font-size: 3.5rem; margin-bottom: 1rem; color: var(--purple); font-family: var(--fh); }
+    .app-hero p { font-size: 1.2rem; color: var(--muted); max-width: 600px; margin: 0 auto 2rem; }
+    .app-content { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+    .feat-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px; margin-bottom: 60px; }
+    .f-card { background: var(--glass); padding: 25px; border-radius: 16px; border: 1px solid rgba(196,77,255,0.15); }
+    .f-card h4 { color: var(--text); font-size: 1.1rem; margin-bottom: 10px; }
+    .f-card p { color: var(--muted); font-size: 0.9rem; }
+    .app-cta-box { text-align: center; padding: 60px 20px; background: rgba(196,77,255,0.05); border-radius: 20px; border: 1px solid rgba(196,77,255,0.2); margin-bottom: 80px; }
+    .btn-purp { background: var(--g-pur); color: white; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/logo.jpg" alt="Ingenia IA" style="width: 44px; height: 44px; border-radius: 8px; object-fit: cover;">
+        <div class="logo-wordmark"><span class="logo-name">INGENIA IA</span></div>
+      </a>
+      <div class="nav-links">
+        <a href="index.html#apps-produccion" class="nav-link">← Volver al Ecosistema</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app-hero">
+    <div class="section-badge" style="color:var(--purple); border-color:rgba(196,77,255,0.3)">Gestión de Reservas</div>
+    <h1>Plataforma Automática <br> <span style="font-size: 0.5em; opacity: 0.8">(Caso: The Heels)</span></h1>
+    <p>La plataforma definitiva de gestión para empresas basadas en citas: clínicas, despachos, academias o consultorías. Automatizando el embudo desde la reserva hasta el seguimiento del cliente.</p>
+  </div>
+
+  <div class="app-content">
+    <h2 class="section-title" style="text-align:center; font-size:2rem; margin-bottom: 2rem;">Transformación para Negocios de Servicios</h2>
+    <p style="color:var(--text); font-size:1.1rem; line-height:1.8; margin-bottom: 2rem;">
+      <strong>El Problema:</strong> Las clínicas, bufetes y profesionales independientes a menudo gestionan sus citas en agendas de papel o calendarios fragmentados, cobran por transferencias manuales, y el seguimiento del cliente se pierde en cadenas de correos o WhatsApp. Esto resulta en baja escalabilidad, impagos y mala experiencia de usuario.<br><br>
+      <strong>La Solución:</strong> Partiendo del caso de éxito de The Heels, hemos consolidado una plataforma digital integral. Tus clientes pueden reservar sus huecos online de forma autónoma, el sistema gestiona los cobros recurrentes o puntuales, y centralizas todo el expediente y la comunicación con el cliente en un panel privado. Además, incluye un sitio web con Blog optimizado para captar nuevo tráfico.
+    </p>
+
+    <h2 class="section-title" style="text-align:center; font-size:2rem; margin-top:4rem;">Features Principales del Motor</h2>
+    <div class="feat-list">
+      <div class="f-card">
+        <h4>🗓️ Booking Inteligente</h4>
+        <p>Sistema de reservas y calendario automático sincronizado, erradicando los dobles bookings y liberando tu tiempo al teléfono.</p>
+      </div>
+      <div class="f-card">
+        <h4>💳 Pagos Automatizados (Stripe)</h4>
+        <p>Pasarela de pago sin fricción. Permite cobrar reservas individuales al momento o establecer suscripciones y mensualidades recurrentes.</p>
+      </div>
+      <div class="f-card">
+        <h4>📂 Hub del Cliente (Expediente Digital)</h4>
+        <p>Panel privado donde el cliente y tú podéis intercambiar y almacenar documentos, imágenes de seguimiento, PDFs o informes confidenciales.</p>
+      </div>
+      <div class="f-card">
+        <h4>🤖 IA Blog & Presencia Web</h4>
+        <p>No solo herramienta interna: incluye tu portal web corporativo con un potente motor de publicación asistido por Inteligencia Artificial para potenciar tu SEO local.</p>
+      </div>
+    </div>
+
+    <div class="app-cta-box">
+      <h3 style="font-size:2rem; margin-bottom:1rem; font-family:var(--fh);">¿Diriges una empresa basada en citas?</h3>
+      <p style="color:var(--muted); margin-bottom:2rem; max-width:500px; margin-left:auto; margin-right:auto;">El motor full-stack de citas y clientes no está limitado a The Heels. Lo adaptamos a las reglas de negocio de tu clínica de salud, despacho de abogados, academia o estudio privado.</p>
+      <a href="index.html#tu-app" class="btn btn-purp btn-lg">Quiero digitalizar mis reservas</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" style="text-align:center; padding: 20px; border-top: 1px solid var(--border); color: var(--muted2); font-size: 0.8rem;">
+      © 2025 Ingenia IA. Todos los derechos reservados.
+    </div>
+  </footer>
+
+</body>
+</html>
